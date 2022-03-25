@@ -19,6 +19,8 @@ app.use('/', help_api);
 var api = require('./api');
 app.use('/api', api);
 
-app.listen(3000).on('listening', function() {
+var PORT = process.env.PORT || 3000
+
+app.listen(PORT).on('listening', function() {
     console.log('Listening on port '+this.address().port);
 });
