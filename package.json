@@ -1,0 +1,22 @@
+{
+  "name": "example-service",
+  "version": "1.0.0",
+  "description": "This is an example app created to check ingress connection and furher help in mulesoft poc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Shubham Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
+    "multer": "^1.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
