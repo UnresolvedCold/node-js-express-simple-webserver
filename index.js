@@ -20,5 +20,5 @@ var api = require('./api');
 app.use('/api', api);
 
 app.listen(3000).on('listening', function() {
-    console.log('Listening on port 3000');
+    console.log('Listening on port '+this.address().port);
 });
