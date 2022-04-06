@@ -13,7 +13,6 @@ wss.on('connection', (ws) => {
 
     // Triggered when a client send message to the server
     ws.on('message', (messageAsString) => {
-      console.log('received: %s', messageAsString);
       const message = JSON.parse(messageAsString.toString());
       console.log(message);
       metadata = clients.get(ws);
